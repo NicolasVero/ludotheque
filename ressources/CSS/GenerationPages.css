@@ -1,0 +1,95 @@
+header
+{
+	font-family: Arial,sans-serif;
+	background: #1560BD;
+	box-shadow: 3px 3px 2px #01363A;
+	height:15%;
+	text-align: center;
+}
+nav
+{
+	margin-top: 15px;
+	min-width: 10%; 
+	height: 20%;
+	padding-right: 6px;
+	padding-left: 15px;
+	float: right;
+	background-color: white;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+footer
+{
+	font-family:Trebuchet MS, Verdana,sans-serif;
+	text-align: center;
+	width:100%;
+	padding-top:1%;
+	padding-bottom:1%;
+	bottom:0;
+	margin-top:12%;
+	background-color: #0B406C;
+	color: #B7BFCF;
+	border: 2px solid black;
+}
+ul
+{
+	list-style-type: none;
+}
+.image
+{
+	padding-left: 45%; 
+	display: inline;
+	
+}
+.img
+{
+	border-radius:30%;
+	display:block;
+	padding-top:1%;
+	margin-top:1%;
+	margin-left:44%;
+	margin-right:45%;
+}
+table
+{
+	text-align: center;
+}
+.center
+{
+	border-radius:35%;
+	width: 100%;
+	text-align: center;
+	background-color: #0B406C;
+	color: white;
+	text-decoration: underline;
+}
+.accueil
+{
+	height:50%;
+	width: 50%;
+}
+.description
+{
+	font-family: Georgia,sans-serif;
+	margin-top:2.5%;
+	width: 30%;
+	background-color: #0B406C;
+	color: #B7BFCF;
+	box-shadow: 2px 2px 0px black;
+	border: 1px solid black;
+	font-size: 1.3em;
+}
+.auteur
+{
+	width: 100%;
+	background-color: #0B406C;
+	color: white;
+	
+}
+.editeur
+{
+	margin-left: 5%;
+	width: 90%;
+	background-color: #0B406C;
+	color: white;
+}
