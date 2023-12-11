@@ -22,9 +22,8 @@ public class Jeu
 	             int       nbJoueurMaxi,
 	             int       tempsMoyen,
 	             int       ageMini,
-	             String    image          )
-
-	{
+	             String    image          
+	) {
 		this.categorie    = categorie;
 		this.titre        = titre;
 		this.dateDeSortie = dateDeSortie;
@@ -55,8 +54,7 @@ public class Jeu
 	// Méthode utilitaire indépendante de tout Objet
 	// Transforme une date au format AAAAMMJJ en date au Format JJ/MM/AAAA
 	// On part du principe que la donnée en entrée est correcte
-	private String format ( String date )
-	{
+	private String format ( String date ) {
 		// AAAAMMJJ
 		// 01234567
 
@@ -66,27 +64,21 @@ public class Jeu
 	}
 
 
-
 	// Ici la méthode toString ne donne pas toutes les informations, elle permet juste de
 	// vérifier les données principales du Jeu.
 	// Toute la mise en forme doit être normalement faites dans une partie IHM.
 	// Pour vous ce sera de la responsabilité des méthodes  qui  généreront  les  données
 	// de faire la mise en forme
-	public String toString()
-	{
-		String sRet = String.format ("%-10s",    this.getDateDeSortie() )      + " | " +
-		              String.format ("%-45s",    this.titre )                  + " | " +
-		              String.format ("%-15s",    this.categorie.getLibelle() ) + " | " +
-		              String.format ("%-22s",    this.editeur.getNom()       ) + " | " +
-		              String.format ("%-18.18s", this.auteur1                ) + " | ";
+	public String toString() {
+		String sRet = String.format ("%-10s",    this.getDateDeSortie())      + " | " +
+		              String.format ("%-45s",    this.titre)                  + " | " +
+		              String.format ("%-15s",    this.categorie.getLibelle()) + " | " +
+		              String.format ("%-22s",    this.editeur.getNom())   	  + " | " +
+		              String.format ("%-18.18s", this.auteur1) 				  + " | ";
 
-		if ( this.auteur2 != null )
-			sRet +=  String.format ("%-18.18s", this.auteur2                ) + " | ";
-		else
-			sRet += String.format ("%-18s",     ""                          ) + " | ";
-
-		return sRet;
+		if(this.auteur2 != null)
+			return sRet + String.format ("%-18.18s", this.auteur2) + " | ";
+		
+		return sRet + String.format ("%-18s","") + " | ";
 	}
-
-
 }
